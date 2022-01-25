@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+  }
+  
+  .emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .icon {
+    font-size: 4rem;
+  }
+
+/* === My Code === */
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 850px;
+    height: 100px;
+}
+
+.emoji {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    align-self: center;
+}
+
+h2 {
+    order: 1;
+}
+
+p {
+    flex-grow: 1;
+    order: 2;
+}
+
+a {
+    order: 3;
+}
